@@ -27,5 +27,5 @@ import (
 )
 
 func main() {
-	http.ListenAndServe("", nil) // 404 not found
+	http.ListenAndServe("", nil) // nilに割り当てられているマルチプレクサは、(ハンドラを書いていないので)ハンドラを見つけられず、404を返す。
 }
